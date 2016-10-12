@@ -1,0 +1,17 @@
+---
+layout: page
+title: Books I Read
+permalink: /books/
+published: false
+---
+
+<h2>Books I read </h2>
+{% for book in site.books %}
+  <h1> {{book.author}}</h1>
+  <h1> {{book.title}}</h1>
+{% endfor %}
+
+<h2>Books I am reading</h2>
+
+
+<h2>Books I want to read</h2>

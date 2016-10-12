@@ -1,0 +1,33 @@
+<div class="tagline">
+    <span>
+      <i class="fa fa-calendar"></i>
+      <time>
+        {% assign d = include.date | date: "%d" | plus:'0' %}
+        {{ include.date | date: "%B" }}
+        {% case d %}
+        {% when 1 or 21 or 31 %}{{ d }}st,
+        {% when 2 or 22 %}{{ d }}nd,
+        {% when 3 or 23 %}{{ d }}rd,
+        {% else %}{{ d }}th,
+        {% endcase %}
+        {{ include.date | date: "%Y" }}
+      </time>
+    </span>
+    <span>
+    <i class="fa fa-tags"></i>
+      {% for tag in site.tags %}
+      {{ tag[0] }} {% endfor %}
+    </span>
+    {% if page.layout == 'post' %}
+    <span>
+      <i class="fa fa-book"></i>
+      {% assign words = content | number_of_words %}
+      {% if words < 360 %}
+        1 min
+      {% else %}
+        {{words | divided_by: 180}} mins
+      {% endif %}
+      read
+    </span>
+    {% endif %}
+</div>

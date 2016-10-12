@@ -1,0 +1,21 @@
+---
+layout: default
+title: Zein Sleiman - Software Engineer
+---
+{% for post in paginator.posts %}
+<article class="home">
+  <h1>
+    <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+  </h1>
+  {% include tagline.html date = post.date %}
+  <div class="post-content">
+    {{ post.excerpt }}
+  </div>
+</article>
+{% endfor %}
+{% if paginator.total_posts > 0 %}
+  <hr/>
+  {% include pager.html %}
+{% else %}
+  <p class="no-posts"> No posts available </p>
+{% endif %}

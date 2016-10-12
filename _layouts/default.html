@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>{{ page.title }}</title>
+	{% if page.description %}
+	<meta name="description" content="{{ page.description }}"> {% endif %}
+	<meta name="author" content="{{ site.author.name }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="{{ site.BASE_PATH }}/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="{{ site.BASE_PATH }}/assets/css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700&subset=latin-ext" rel="stylesheet">
+
+	<script src="https://use.fontawesome.com/3aae3aca76.js"></script>
+	<!-- {% include google_analytics.html %} -->
+</head>
+
+<body>
+	<div class="col-xs-6 col-sm-3 sidebar sidebar-offcanvas affix" style="{% if site.sidebar_background_image %}background: url({{site.sidebar_background_image}}) repeat !important;{% endif %}">
+		{% include sidebar.html %}
+	</div>
+	<div class="col-sm-9 col-xs-12 col-sm-offset-3 main" style="{% if site.content_background_image %}background: url({{site.content_background_image}}) repeat !important;{% endif %}">
+		<div class="headerToggle" data-toggle="offcanvas">
+			<a class="toggle"><i class="fa fa-bars"></i></a>
+		</div>
+		{{ content }}
+		<footer>
+			<hr/>
+			<p>
+				Copyright &copy; {{ site.time | date: '%Y' }} {{ site.author.name }} Blog content licensed under the Creative Commons
+				<strong><a href="https://creativecommons.org/licenses/by/2.5/" target="_blank">CC By 2.5</strong></a>. Made by <strong><a href="http://jekyllrb.com/" target="_blank">Jekyll</a></strong>, Coffee and <i class="fa fa-heart"></i>
+			</p>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/app.js"></script>
+	<script id="dsq-count-scr" src="//zeinsleiman-com.disqus.com/count.js" async></script>
+</body>
+
+</html>

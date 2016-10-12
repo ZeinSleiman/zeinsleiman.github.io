@@ -1,0 +1,39 @@
+#
+#Jekyll Settings
+#
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: pygments
+markdown: kramdown
+google_analytics:
+title: Zein Sleiman
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: zein sleiman
+
+description: Stylish Jekyll Theme
+author:
+  name: Zein Sleiman
+  email: zein.hajjsleiman@gmail.com
+  github: zeinsleiman
+  linkedin: zeinhajjsleiman
+  keybase: zeinsleiman
+  bio: Software Engineer
+  image: "/assets/images/zein.png"
+
+# set it as url of an image
+sidebar_background_image: "/assets/images/fabric.png"
+content_background_image: "/assets/images/grid.png"
+
+permalink: /blog/:year/:month/:day/:title
+
+gems:
+  - jekyll-paginate
+
+collections:
+  books:
