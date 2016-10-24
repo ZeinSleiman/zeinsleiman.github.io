@@ -44,22 +44,10 @@ footer {padding-top: 15px;}
 	-webkit-transition: margin-left .5s ease-out;
 	 transition: margin-left .5s ease-out;
  }
+
+
 /*Social*/
-article .share .btn {
-	-o-transition:color .2s ease-out, background 1s ease-in;
-  -ms-transition:color .2s ease-out, background 1s ease-in;
-  -moz-transition:color .2s ease-out, background 1s ease-in;
-  -webkit-transition:color .2s ease-out, background 1s ease-in;
-  transition:color .2s ease-out, background 1s ease-in;
-}
-article .share .twitter:hover {
-	color: #00ACEE;
-	border-color: #00ACEE;
-}
-article .share .facebook:hover {
-	color: #43609C;
-	border-color: #43609C;
-}
+.share a {padding-right: 10px;}
 
 article.home h1, .content h1,
 article.home h2, .content h2,

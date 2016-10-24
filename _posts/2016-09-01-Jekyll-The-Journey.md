@@ -3,7 +3,7 @@ layout: post
 title: Moving to Jekyll - The Journey
 tags: [personal, blog, cms]
 excerpt_separator: <!-- continue -->
-published: false
+published: true
 ---
 
 A year ago, I found about Jekyll browsing the internet and after reading about it, I thought to myself, I should use to build my blog. It looks really cool.

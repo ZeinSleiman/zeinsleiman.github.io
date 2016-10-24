@@ -3,7 +3,7 @@ layout: custom_page
 title: About
 permalink: /about/
 header_image:
-  image_url: /assets/images/scene.png
+  image_url: /assets/images/about.jpg
   alt_text: Beach
   title: Beach & Code
 ---
