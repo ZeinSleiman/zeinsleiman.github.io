@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Moving to Jekyll - The Journey
+description: testing description
 tags: [personal, blog, cms]
 excerpt_separator: <!-- continue -->
 published: true

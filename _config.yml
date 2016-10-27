@@ -33,6 +33,7 @@ permalink: /blog/:year/:month/:day/:title
 
 gems:
   - jekyll-paginate
+  - jekyll-seo-tag
 
 collections:
   books:
