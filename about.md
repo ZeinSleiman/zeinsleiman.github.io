@@ -2,6 +2,7 @@
 layout: custom_page
 title: About
 permalink: /about/
+description: Zein Sleiman - Software Engineer
 header_image:
   image_url: /assets/images/about.jpg
   alt_text: Beach
@@ -10,6 +11,7 @@ header_image:
 
 # Who I am
 I am very passionate about programming and love every aspect of it. The challenge, excitement when solving a problem and the satisfaction when you build software that will be used by others. I am not artistic and I can barely draw a stick man but for me programming is an art. I learned that in this field the amount of material to learn from is infinite and I will keep learning so I can create a difference in people's lives.
+
 
 # What I do
 Currently, I work at Orderbot Software as a Software Engineer. I work on two applications, the order management system and the clients' websites that we build. We use Asp.Net WebForms C#, JQuery, HTML 5, CSS3 and the responsive design Framework Foundation from Zurb.
