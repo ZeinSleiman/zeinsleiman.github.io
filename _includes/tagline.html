@@ -1,7 +1,7 @@
 <div class="tagline">
     <span>
       <i class="fa fa-calendar"></i>
-      <time>
+      <time itemprop="datePublished">
         {% assign d = include.date | date: "%d" | plus:'0' %}
         {{ include.date | date: "%B" }}
         {% case d %}

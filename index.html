@@ -3,19 +3,20 @@ layout: default
 title: Zein Sleiman - Software Engineer
 ---
 {% for post in paginator.posts %}
-<article class="home">
-  <h1>
-    <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-  </h1>
-  {% include tagline.html date = post.date %}
-  <div class="post-content">
-    {{ post.excerpt }}
-  </div>
-</article>
+<div itemscope itemtype="http://schema.org/Blog">
+    <article class="home" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 itemprop="name">
+          <a href="{{ site.BASE_PATH }}{{ post.url }}" itemprop="url">{{ post.title }}</a>
+        </h1>
+        {% include tagline.html date = post.date %}
+        <div class="post-content" itemprop="articleBody">
+            {{ post.excerpt }}
+        </div>
+    </article>
+</div>
 {% endfor %}
 {% if paginator.total_posts > 0 %}
   <hr/>
-  {% include pager.html %}
-{% else %}
+{% include pager.html %} {% else %}
   <p class="no-posts"> No posts available </p>
 {% endif %}
