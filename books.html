@@ -9,19 +9,19 @@ published: true
 <div class="card-columns">
   {% for book in site.books %}
     {% if book.status == "read" %}
-      <div class="card">
+      <div class="card" itemscope itemtype="http://schema.org/Book">
           <div class="card-block">
             <h4 class="card-title">
-              <a href="{{book.buy_link}}" target="_blank"> {{book.title}} </a>
+              <a href="{{book.buy_link}}" target="_blank" itemprop="name"> {{book.title}} </a>
             </h4>
           </div>
           <ul class="list-group list-group-flush">
             {% if book.subtitle %}
-            <li class="list-group-item"> {{book.subtitle}}</li>
+            <li class="list-group-item" itemprop="about"> {{book.subtitle}}</li>
             {% endif %}
             <li class="list-group-item">
                 <span>Author:</span>
-                <span> {{book.author}} </span>
+                <span itemprop="author"> {{book.author}} </span>
             </li>
           </ul>
         </div>
@@ -33,19 +33,19 @@ published: true
 <div class="card-columns">
   {% for book in site.books %}
     {% if book.status == "inprogress" %}
-      <div class="card">
+      <div class="card" itemscope itemtype="http://schema.org/Book">
         <div class="card-block">
           <h4 class="card-title">
-            <a href="{{book.buy_link}}" target="_blank"> {{book.title}} </a>
+            <a href="{{book.buy_link}}" target="_blank" itemprop="name"> {{book.title}} </a>
           </h4>
         </div>
         <ul class="list-group list-group-flush">
           {% if book.subtitle %}
-          <li class="list-group-item"> {{book.subtitle}}</li>
+          <li class="list-group-item" itemprop="about"> {{book.subtitle}}</li>
           {% endif %}
           <li class="list-group-item">
               <span>Author:</span>
-              <span> {{book.author}} </span>
+              <span itemprop="author"> {{book.author}} </span>
           </li>
           <li class="list-group-item">
               <span>Progress:</span>
@@ -63,19 +63,19 @@ published: true
 <div class="card-columns">
   {% for book in site.books %}
     {% if book.status == "future" %}
-      <div class="card">
+      <div class="card" itemscope itemtype="http://schema.org/Book">
         <div class="card-block">
           <h4 class="card-title">
-            <a href="{{book.buy_link}}" target="_blank"> {{book.title}} </a>
+            <a href="{{book.buy_link}}" target="_blank" itemprop="name"> {{book.title}} </a>
           </h4>
         </div>
         <ul class="list-group list-group-flush">
           {% if book.subtitle %}
-          <li class="list-group-item"> {{book.subtitle}}</li>
+          <li class="list-group-item" itemprop="about"> {{book.subtitle}}</li>
           {% endif %}
           <li class="list-group-item">
               <span>Author:</span>
-              <span> {{book.author}} </span>
+              <span itemprop="author"> {{book.author}} </span>
           </li>
         </ul>
       </div>
