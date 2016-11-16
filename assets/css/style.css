@@ -12,12 +12,14 @@ body a:hover, body a:focus {
 	text-decoration: none;
 }
 
+.card {border: none;}
+
 .fa-heart { color: red; }
 
 .header_image {margin-left: -15px; overflow: hidden;}
 .no-posts {font-size: 72px; text-align: center; min-height: 600px; margin-top: 300px;}
 
-.sidebar { display:block; padding-top: 10%; background-color: #828282; color:#fff; height: 100%;}
+.sidebar { display:block; padding-top: 10%; background-color: #343535; color:#fff; height: 100%;}
 .sidebar a, .sidebar a:focus { color: #fff; }
 .sidebar a:hover { color: #f64929; }
 nav {font-size: 1.5em; margin-bottom: 20px;}
@@ -40,12 +42,10 @@ article, .content { margin-bottom: 40px; padding: 0 5% 0;}
 .content p { font-size: 1.5em; text-align: justify;}
 footer {padding-top: 15px;}
 
-#main {
-	-webkit-transition: margin-left .5s ease-out;
-	 transition: margin-left .5s ease-out;
- }
+.main {background-color: #cdcdcd;}
 
-
+.book-box {border-radius: 5px; padding: 5px; border: solid 1px #888; min-height: 150px;}
+.affix {position: fixed;}
 /*Social*/
 .share a {padding-right: 10px;}
 

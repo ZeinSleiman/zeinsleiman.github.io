@@ -1,5 +1,8 @@
 ---
 title: Think Simple
-image_Path:
-author:
+subtitle: How Smart Leaders Defeat Complexity
+author: Ken Segall
+status: read
+progress: 100
+aria_identifier: thinksimple
 ---

@@ -2,16 +2,83 @@
 layout: page
 title: Books I Read
 permalink: /books/
-published: false
+published: true
 ---
 
-<h2>Books I read </h2>
-{% for book in site.books %}
-  <h1> {{book.author}}</h1>
-  <h1> {{book.title}}</h1>
-{% endfor %}
+<h1>Books I read </h1>
+<div class="card-columns">
+  {% for book in site.books %}
+    {% if book.status == "read" %}
+      <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">
+              <a href="{{book.buy_link}}" target="_blank"> {{book.title}} </a>
+            </h4>
+          </div>
+          <ul class="list-group list-group-flush">
+            {% if book.subtitle %}
+            <li class="list-group-item"> {{book.subtitle}}</li>
+            {% endif %}
+            <li class="list-group-item">
+                <span>Author:</span>
+                <span> {{book.author}} </span>
+            </li>
+          </ul>
+        </div>
+    {% endif %}
+  {% endfor %}
+</div>
+<hr>
+<h1>Books I am reading</h2>
+<div class="card-columns">
+  {% for book in site.books %}
+    {% if book.status == "inprogress" %}
+      <div class="card">
+        <div class="card-block">
+          <h4 class="card-title">
+            <a href="{{book.buy_link}}" target="_blank"> {{book.title}} </a>
+          </h4>
+        </div>
+        <ul class="list-group list-group-flush">
+          {% if book.subtitle %}
+          <li class="list-group-item"> {{book.subtitle}}</li>
+          {% endif %}
+          <li class="list-group-item">
+              <span>Author:</span>
+              <span> {{book.author}} </span>
+          </li>
+          <li class="list-group-item">
+              <span>Progress:</span>
+              <span id="progress-{{book.aria_identifier}}">{{book.progress}}%</span>
+              <progress class="progress progress-success" value="{{book.progress}}" max="100"
+                        aria-describedby="progress-{{book.aria_identifier}}"></progress>
+          </li>
+        </ul>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
 
-<h2>Books I am reading</h2>
-
-
-<h2>Books I want to read</h2>
+<h1>Books I want to read</h2>
+<div class="card-columns">
+  {% for book in site.books %}
+    {% if book.status == "future" %}
+      <div class="card">
+        <div class="card-block">
+          <h4 class="card-title">
+            <a href="{{book.buy_link}}" target="_blank"> {{book.title}} </a>
+          </h4>
+        </div>
+        <ul class="list-group list-group-flush">
+          {% if book.subtitle %}
+          <li class="list-group-item"> {{book.subtitle}}</li>
+          {% endif %}
+          <li class="list-group-item">
+              <span>Author:</span>
+              <span> {{book.author}} </span>
+          </li>
+        </ul>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

@@ -26,18 +26,16 @@ layout: default
     </article>
 </div>
 <hr/>
-<ul class="pager">
     {% if page.previous %}
-    <li class="previous">
-        <a href="{{ site.BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a>
-    </li>
+      <a class="btn btn-secondary" href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Older</a>
     {% else %}
-    <li class="previous disabled"><a>&larr; Previous</a></li>
-    {% endif %} {% if page.next %}
-    <li class="next">
-        <a href="{{ site.BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a>
-    </li>
+      <a class="btn btn-secondary disabled">&larr; Older</a></li>
+    {% endif %}
+    {% if page.next %}
+      <a class="pull-right btn btn-secondary" href="{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a>
     {% else %}
-    <li class="next disabled"><a>Next &rarr;</a> {% endif %}
-</ul>
-{% include disqus.html %}
+      <a class="pull-right btn btn-secondary disabled">Next &rarr;</a>
+    {% endif %}
+{% if jekyll.environment == "production" %}
+  {% include disqus.html %}
+{% endif %}
