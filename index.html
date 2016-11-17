@@ -17,6 +17,7 @@ title: Zein Sleiman - Software Engineer
 {% endfor %}
 {% if paginator.total_posts > 0 %}
   <hr/>
-{% include pager.html %} {% else %}
+{% include pagination.html %}
+{% else %}
   <p class="no-posts"> No posts available </p>
 {% endif %}

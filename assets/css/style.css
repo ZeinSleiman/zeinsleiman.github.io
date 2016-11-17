@@ -31,7 +31,7 @@ nav {font-size: 1.5em; margin-bottom: 20px;}
 .headerToggle {display: none;}
 
 .article_body {margin-bottom: 20px;}
-.article_body p, .post-content p {margin-top: 30px; margin-bottom: 0px;}
+.article_body p, .post-content p {margin-top: 30px;}
 
 .tagline {letter-spacing: 1.5px;}
 .tagline span {padding-right: 5px;}

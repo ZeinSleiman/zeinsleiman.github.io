@@ -4,19 +4,19 @@ layout: default
 
 <div itemscope itemtype="http://schema.org/LiveBlogPosting">
     <article class="home">
-        <h1 itemprop="name">
-      {{ page.title }}
-      {% if page.tagline %}<small>{{page.tagline}}</small>
-      {% endif %}
-    </h1> {% include tagline.html date = page.date %}
+        <h1 itemprop="name">{{ page.title }}
+          {% if page.tagline %}
+            <small>{{page.tagline}}</small>
+          {% endif %}
+        </h1>
+        {% include tagline.html date = page.date %}
         <div class="article_body" itemprop="articleBody">
             {{ content }}
         </div>
         <hr>
         <section class="share">
             <h3 class="section-title">Share Post</h3>
-            <a href="http://twitter.com/share?text={{page.title | encode}}{% if site.author.twitter%}&via={{site.author.twitter}}{% endif %}"
-               onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <a href="http://twitter.com/share?text={{page.title | encode}}{% if site.author.twitter%}&via={{site.author.twitter}}{% endif %}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                 <i class="fa fa-twitter-square fa-3x"></i>
             </a>
             <a href="https://www.facebook.com/sharer/sharer.php" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
@@ -26,16 +26,7 @@ layout: default
     </article>
 </div>
 <hr/>
-    {% if page.previous %}
-      <a class="btn btn-secondary" href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Older</a>
-    {% else %}
-      <a class="btn btn-secondary disabled">&larr; Older</a></li>
-    {% endif %}
-    {% if page.next %}
-      <a class="pull-right btn btn-secondary" href="{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a>
-    {% else %}
-      <a class="pull-right btn btn-secondary disabled">Next &rarr;</a>
-    {% endif %}
+{% include pager.html %}
 {% if jekyll.environment == "production" %}
   {% include disqus.html %}
 {% endif %}

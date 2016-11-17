@@ -1,7 +1,7 @@
 ---
 title: Think Like a Freak
-author:
+author: Steven D. Levitt, Stephen J. Dubner
 status: future
-progress:
+progress: 0
 aria_identifier: thinkfreak
 ---
