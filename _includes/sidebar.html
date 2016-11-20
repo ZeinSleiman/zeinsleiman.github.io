@@ -14,44 +14,44 @@
 		</h3> {% endif %}
 	</header>
 	<nav class="text-xs-center nav nav-inline">
-			<a href="/">Home</a>
-			<a href="/about/">About</a>
+			<a class="nav-link" href="/">Home</a>
+			<a class="nav-link" href="/about/">About</a>
 			<!--<a href="/about/">Archive</a> -->
-			<a href="/books/">Books</a>
+			<a class="nav-link" href="/books/">Books</a>
 	</nav>
 
 	<div class="text-xs-center">
-		<ul class="list-unstyled list-inline">
+		<ul class="list-inline">
 			{% if site.author.github %}
-			<li class="list-inline-item">
+			<li class="list-inline-item mr-1">
 				<a href="https://github.com/{{ site.author.github }}" target="_blank">
 					<i class="fa fa-github fa-2x"></i>
 				</a>
 			</li>
 			{% endif %}
 			{% if site.author.keybase %}
-			<li class="list-inline-item">
+			<li class="list-inline-item mr-1">
 					<a href="https://keybase.io/{{ site.author.keybase}}" target="_blank">
 						<i class="fa fa-key fa-2x"></i>
 					</a>
 			</li>
 			{% endif %}
 			{% if site.author.twitter %}
-			<li class="list-inline-item">
+			<li class="list-inline-item mr-1">
 				<a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">
 					<i class="fa fa-twitter fa-2x"></i>
 				</a>
 			</li>
 			{% endif %}
 			{% if site.author.linkedin %}
-			<li class="list-inline-item">
+			<li class="list-inline-item mr-1">
 				<a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank">
 					<i class="fa fa-linkedin fa-2x"></i>
 				</a>
 			</li>
 			{% endif %}
 			{% if site.author.email %}
-			<li class="list-inline-item">
+			<li class="list-inline-item mr-1">
 				<a href="mailto:{{ site.author.email }}" target="_blank">
 					<i class="fa fa-envelope fa-2x"></i>
 				</a>
