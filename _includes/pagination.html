@@ -1,40 +1,40 @@
 <div class="row">
-  <div class="col-xs-4">
-    {% if paginator.previous_page %}
-
-       {% if paginator.previous_page == 1 %}
-          <a class="btn btn-secondary" href="{{ site.BASE_PATH }}/" aria-label="Previous">
+    <div class="col-xs-4">
+        {% if paginator.previous_page %}
+         {% if paginator.previous_page == 1 %}
+        <a class="btn btn-secondary" href="/" aria-label="Previous">
             <span aria-hidden="true">&larr;</span>
             <span>Older</span>
-          </a>
-       {% else %}
-          <a class="btn btn-secondary" href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">
-            <span aria-hidden="true">&larr;</span>
-            <span>Older</span>
-          </a>
-       {% endif %}
-
-    {% else %}
-        <a class="btn btn-secondary" aria-label="Previous">
-          <span aria-hidden="true">&larr;</span>
-          <span>Older</span>
         </a>
-    {% endif %}
+        {% else %}
+        <a class="btn btn-secondary" href="/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">
+            <span aria-hidden="true">&larr;</span>
+            <span>Older</span>
+        </a>
+        {% endif %}
+        {% else %}
+        <a class="btn btn-secondary disabled" aria-label="Previous">
+            <span aria-hidden="true">&larr;</span>
+            <span>Older</span>
+        </a>
+        {% endif %}
     </div>
+
     <div class="col-xs-4 text-xs-center">
-    <p class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</p>
-  </div>
-  <div class="col-xs-4 text-xs-right">
-    {% if paginator.next_page %}
-    <a class="btn btn-secondary" href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}" aria-label="Next">
-        <span>Newer</span>
-        <span aria-hidden="true">&rarr;</span>
-    </a>
-    {% else %}
-    <a class="btn btn-secondary">
-        <span>Newer</span>
-        <span aria-hidden="true">&rarr;</span>
-    </a>
-    {% endif %}
-  </div>
+        <p class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</p>
+    </div>
+
+    <div class="col-xs-4 text-xs-right">
+        {% if paginator.next_page %}
+        <a class="btn btn-secondary" href="/{{ site.paginate_path | replace: ':num', paginator.next_page }}" aria-label="Next">
+            <span>Newer</span>
+            <span aria-hidden="true">&rarr;</span>
+        </a>
+        {% else %}
+        <a class="btn btn-secondary disabled">
+            <span>Newer</span>
+            <span aria-hidden="true">&rarr;</span>
+        </a>
+        {% endif %}
+    </div>
 </div>
