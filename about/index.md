@@ -1,7 +1,6 @@
 ---
 layout: custom_page
 title: About
-permalink: /about/
 description: Zein Sleiman - Software Engineer
 header_image:
   image_url: /assets/images/about.jpg
