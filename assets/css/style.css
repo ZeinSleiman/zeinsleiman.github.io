@@ -35,7 +35,7 @@ body a:hover, body a:focus {
 
 .tagline {letter-spacing: 1.5px;}
 .tagline span {padding-right: 5px;}
-article, .content { margin-bottom: 40px; padding: 10px 5% 0;}
+article, .content { margin-bottom: 40px; padding: 0 5% 0;}
 
 .article_body p,
 .post-content p,

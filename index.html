@@ -5,7 +5,7 @@ title: Zein Sleiman - Software Engineer
 {% for post in paginator.posts %}
 <div itemscope itemtype="http://schema.org/Blog">
     <article class="home" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-        <h1 itemprop="name">
+        <h1 itemprop="name" class="mt-2">
           <a href="{{ site.BASE_PATH }}{{ post.url }}" itemprop="url">{{ post.title }}</a>
         </h1>
         {% include tagline.html date = post.date %}
