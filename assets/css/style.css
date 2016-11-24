@@ -79,7 +79,7 @@ article.home h6, .content h6 {
 	.sidebar h2 {font-size: 1.8em;}
 }
 
-@@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1400px) {
 	nav {font-size: 1.5em;}
 }
 /* Media Queries for Responsive design*/
