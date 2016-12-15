@@ -1,158 +1,103 @@
-body {
-	color: #525252;
-	font-family: 'Roboto Slab', sans-serif;
-}
+body, .default-font { font-family: 'Roboto Slab', sans-serif; }
+body { color: #525252; }
+body a { color: #f64929; }
+body a:hover, body a:focus { color: #969a99; text-decoration: none; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Yanone Kaffeesatz', sans-serif; }
 
-body a {
-	color: #f64929;
-}
-
-body a:hover, body a:focus {
-	color: #969a99;
-	text-decoration: none;
-}
-
-.card {border: none;}
-
+.card { border: none; }
 .fa-heart { color: red; }
+.header-image { margin-left: -15px; overflow: hidden; }
+.no-posts { font-size: 72px; min-height: 600px; margin-top: 300px;}
+.headerToggle { display: none; }
+.main { background-color: #cdcdcd; }
+.affix { position: fixed; }
+.tagline { letter-spacing: 1.5px; }
 
-.header_image {margin-left: -15px; overflow: hidden;}
-.no-posts {font-size: 72px; text-align: center; min-height: 600px; margin-top: 300px;}
-
-.sidebar { display:block; padding-top: 10%; background-color: #343535; color:#fff; height: 100%;}
+/* sidebar */
+.sidebar { display: block; padding-top: 5%; padding-left: 0; color: #fff;
+    			 padding-right: 0; background-color: #343535; height: 100%;
+}
 .sidebar a, .sidebar a:focus { color: #fff; }
 .sidebar a:hover { color: #f64929; }
-.nav {margin-bottom: 20px;}
+.sidebar .nav .nav-item {
+	padding: 0.2em 1em;
+	border-top: solid 1px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.15);
+}
+.sidebar .nav-item span { width: 88%; }
 
-.sidebar-header {text-align: center; margin-bottom: 20px;}
-.sidebar-header .title {letter-spacing: 3px; text-transform: uppercase;}
-.sidebar-header .title a {text-decoration: none;}
-
-.headerToggle {display: none;}
-
-.article_body {margin-bottom: 20px;}
-.article_body p, .post-content p {margin-top: 30px;}
-
-.tagline {letter-spacing: 1.5px;}
-.tagline span {padding-right: 5px;}
-article, .content { margin-bottom: 40px; padding: 0 5% 0;}
-
-.article_body p,
-.post-content p,
-.content p { font-size: 1.5em; text-align: justify;}
-footer {padding-top: 15px;}
-
-.main {background-color: #cdcdcd;}
-
-.book-box {border-radius: 5px; padding: 5px; border: solid 1px #888; min-height: 150px;}
-.affix {position: fixed;}
-/*Social*/
-.share a {padding-right: 10px;}
-
-nav {font-size: 1.2em;}
-
-article.home h1, .content h1,
-article.home h2, .content h2,
-article.home h3, .content h3,
-article.home h4, .content h4,
-article.home h5, .content h5,
-article.home h6, .content h6 {
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+@media screen and (max-width: 320px) {
+	.sidebar h1 {font-size: 1.5rem;}
+	.sidebar h3 {font-size: 1.2rem;}
 }
 
-@media screen and (min-width: 767px) {
-	article.home h1, .content h1 {font-size: 4em;}
-	article.home h2, .content h2 {font-size: 3em;}
-	article.home h3, .content h3 {font-size: 2.5em;}
-	article.home h4, .content h4 {font-size: 2em;}
-	article.home h5, .content h5 {font-size: 1.5em;}
-}
-
-@media screen and (min-width: 767px) and (max-width: 800px) {
-		.sidebar h1 {font-size: 1.4em;}
-		.sidebar h2 {font-size: 1.2em;}
-		.sidebar h3 {font-size: 1.1em;}
-		h1, h2, h3, h4, h5, h6 {margin-top: 10px;}
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1024px) {
-	.sidebar h2 {font-size: 1.8em;}
-}
-
-@media screen and (min-width: 1400px) {
-	nav {font-size: 1.5em;}
-}
 /* Media Queries for Responsive design*/
 @media screen and (max-width: 767px) {
-	.sidebar {overflow-y: hidden;}
-   html, body {overflow-x: hidden;}
+    .sidebar {
+        overflow-y: hidden;
+    }
+    html, body {
+        overflow-x: hidden;
+    }
+    .main.active {
+        margin-left: 70%;
+    }
+    .sidebar-offcanvas {
+        top: 0;
+        width: 70%;
+    }
 
-	.page-header {margin-right: 70px;}
+    /* Burger Menu */
+    .headerToggle {
+        -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-transition: -moz-transform 0.5s ease;
+        -webkit-transition: -webkit-transform 0.5s ease;
+        -ms-transition: -ms-transform 0.5s ease;
+        transition: transform 0.5s ease;
+        display: block;
+        position: fixed;
+        top: 0.5em;
+        width: 3.25em;
+        right: 0.5em;
+        height: 2.25em;
+        z-index: 10001;
+    }
+    .headerToggle .toggle {
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em;
+        width: 100%;
+        height: 100%;
+        outline: 0;
+        border: 0;
+        cursor: pointer;
+        font-size: 18px;
+        background: rgba(128, 136, 144, 0.5);
+        border-radius: 0.35em;
+        font-style: normal;
+        font-weight: normal;
+        width: 3.25em;
+        height: 2.25em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .headerToggle .toggle .fa-bars {
+        text-decoration: none;
+        color: #f64929;
+        font-size: 18px;
+        line-height: 2.25em;
+        text-align: center;
+        display: block;
+        line-height: 2.25em;
+    }
+}
 
-	article, .content {margin-bottom: 20px; padding: 0 2% 0;}
-
-	.article_body p,
-	.post-content p,
-	.content p { font-size: 1.2em;}
-
-	hr {margin: 10px 0;}
-
-  .main {padding-top: 3em; padding-bottom: 3em;}
-	.main.active { margin-left: 70%; }
-
-  .sidebar-offcanvas { top: 0; width: 70%;}
-
-	.sidebar h1 {font-size: 1.8em;}
-	.sidebar h2 {font-size: 1.6em;}
-	.sidebar h3 {font-size: 1.4em;}
-
-/* Burger Menu */
-.headerToggle {
-		-moz-backface-visibility: hidden;
-		-webkit-backface-visibility: hidden;
-		-ms-backface-visibility: hidden;
-		backface-visibility: hidden;
-		-moz-transition: -moz-transform 0.5s ease;
-		-webkit-transition: -webkit-transform 0.5s ease;
-		-ms-transition: -ms-transform 0.5s ease;
-		transition: transform 0.5s ease;
-		display: block;
-		position: fixed;
-		top: 0.5em;
-		width: 3.25em;
-		right: 0.5em;
-		height: 2.25em;
-		z-index: 10001;
+@media screen and (max-width: 767px) and (orientation:landscape) {
+  /* Styles for Landscape screen */
+	.sidebar {
+			overflow-y: scroll;
 	}
-
-	.headerToggle .toggle {
-    position: absolute;
-    right: 0.5em;
-    top: 0.5em;
-    width: 100%;
-    height: 100%;
-    outline: 0;
-    border: 0;
-		cursor: pointer;
-		font-size: 18px;
-	  background: rgba(128, 136, 144, 0.5);
-		border-radius: 0.35em;
-		font-style: normal;
-    font-weight: normal;
-		width: 3.25em;
-    height: 2.25em;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.headerToggle .toggle .fa-bars {
-    text-decoration: none;
-    color: #f64929;
-    font-size: 18px;
-    line-height: 2.25em;
-    text-align: center;
-    display: block;
-    line-height: 2.25em;
-}
-
 }

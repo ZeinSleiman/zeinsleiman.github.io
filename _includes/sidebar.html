@@ -1,26 +1,48 @@
 <!-- sidebar.html -->
-<div class="top">
-	<header class="sidebar-header" role="banner">
+<div>
+	<header class="sidebar-header text-xs-center" role="banner">
 		{% if site.author.image %}
 		<a href="{{ site.BASE_PATH }}/">
 			<img src="{{ site.author.image }}" class="rounded-circle" />
 		</a>
 		{% endif %}
-		<h2 class="title">
+		<h1 class="default-font">
         <a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
-    </h2> {% if site.author.bio %}
-		<h3 class="text-center">
+    </h1>
+		{% if site.author.bio %}
+		<h3 class="default-font">
 			{{ site.author.bio }}
-		</h3> {% endif %}
+		</h3>
+		{% endif %}
 	</header>
-	<nav class="text-xs-center nav nav-inline">
-			<a class="nav-link" href="/">Home</a>
-			<a class="nav-link" href="/about/">About</a>
-			<a class="nav-link" href="/archive/">Archive</a>
-			<a class="nav-link" href="/books/">Readings</a>
+	<nav class="nav align-middle my-2">
+		<li class="nav-item">
+			<a href="/">
+				<span class="d-inline-block">Home</span>
+				<i class="fa fa-home"></i>
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="/about/">
+				<span class="d-inline-block">About</span>
+				<i class="fa fa-user"></i>
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="/archive/">
+				<span class="d-inline-block">Archive</span>
+				<i class="fa fa-archive"></i>
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="/books/">
+				<span class="d-inline-block">Readings</span>
+				<i class="fa fa-book"></i>
+			</a>
+		</li>
+		<li class="nav-item"></li>
 	</nav>
-
-	<div class="text-xs-center">
+	<div class="text-xs-center pt-2">
 		<ul class="list-inline">
 			{% if site.author.github %}
 			<li class="list-inline-item mr-1">
@@ -51,7 +73,7 @@
 			</li>
 			{% endif %}
 			{% if site.author.email %}
-			<li class="list-inline-item mr-1">
+			<li class="list-inline-item">
 				<a href="mailto:{{ site.author.email }}" target="_blank">
 					<i class="fa fa-envelope fa-2x"></i>
 				</a>

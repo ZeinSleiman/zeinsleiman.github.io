@@ -4,12 +4,12 @@ title: Zein Sleiman - Software Engineer
 ---
 {% for post in paginator.posts %}
 <div itemscope itemtype="http://schema.org/Blog">
-    <article class="home" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-        <h1 itemprop="name" class="mt-2">
+    <article class="home my-3" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 itemprop="name">
           <a href="{{ site.BASE_PATH }}{{ post.url }}" itemprop="url">{{ post.title }}</a>
         </h1>
         {% include tagline.html date = post.date %}
-        <div class="post-content" itemprop="articleBody">
+        <div class="mt-2 text-justify" itemprop="articleBody">
             {{ post.excerpt }}
         </div>
     </article>
@@ -19,5 +19,5 @@ title: Zein Sleiman - Software Engineer
   <hr/>
 {% include pagination.html %}
 {% else %}
-  <p class="no-posts"> No posts available </p>
+  <p class="no-posts text-xs-center"> No posts available </p>
 {% endif %}

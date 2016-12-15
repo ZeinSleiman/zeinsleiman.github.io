@@ -2,14 +2,14 @@
 layout: default
 ---
 <div itemscope itemtype="http://schema.org/LiveBlogPosting">
-    <article class="home">
-        <h1 itemprop="name" class="mt-2">{{ page.title }}
+    <article class="home text-justify my-3">
+        <h1 itemprop="name">{{ page.title }}
           {% if page.tagline %}
             <small>{{page.tagline}}</small>
           {% endif %}
         </h1>
         {% include tagline.html date = page.date %}
-        <div class="article_body" itemprop="articleBody">
+        <div class="mt-2" itemprop="articleBody">
             {{ content }}
         </div>
         <hr>

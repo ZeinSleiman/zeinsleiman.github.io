@@ -22,15 +22,15 @@
 </head>
 
 <body>
-	<div class="col-xs-6 col-sm-3 sidebar sidebar-offcanvas affix">
+	<div class="col-xs-6 sidebar sidebar-offcanvas affix">
 		{% include sidebar.html %}
 	</div>
-	<div class="col-sm-9 col-xs-12 offset-sm-3 main">
+	<div class="col-xs-12 main">
 		<div class="headerToggle" data-toggle="offcanvas">
 			<a class="toggle"><i class="fa fa-bars"></i></a>
 		</div>
 		{{ content }}
-		<footer>
+		<footer class="pt-1">
 			<hr/>
 			<p class="text-xs-center">
 				Copyright &copy; {{ site.time | date: '%Y' }} {{ site.author.name }} blog content licensed under the Creative Commons
