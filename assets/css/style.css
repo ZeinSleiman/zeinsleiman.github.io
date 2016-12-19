@@ -2,16 +2,18 @@ body, .default-font { font-family: 'Roboto Slab', sans-serif; }
 body { color: #525252; }
 body a { color: #f64929; }
 body a:hover, body a:focus { color: #969a99; text-decoration: none; }
-h1, h2, h3, h4, h5, h6 { font-family: 'Yanone Kaffeesatz', sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif; }
 
 .card { border: none; }
 .fa-heart { color: red; }
 .header-image { margin-left: -15px; overflow: hidden; }
 .no-posts { font-size: 72px; min-height: 600px; margin-top: 300px;}
 .headerToggle { display: none; }
-.main { background-color: #cdcdcd; }
+.main { background-color: #cdcdcd;}
 .affix { position: fixed; }
-.tagline { letter-spacing: 1.5px; }
+.tagline { letter-spacing: 1.5px; font-size: 1rem;}
+.content {min-height: 600px;}
+.not-found {font-size: 6rem; min-height: 650px; margin-top: 175px;}
 
 /* sidebar */
 .sidebar { display: block; padding-top: 5%; padding-left: 0; color: #fff;
@@ -26,9 +28,31 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Yanone Kaffeesatz', sans-serif; }
 }
 .sidebar .nav-item span { width: 88%; }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .card-columns {
+      column-count: 2;
+    }
+}
+
+@media screen and (min-width: 767px) {
+  .m-m-3 {margin-top: 1.5rem !important; margin-left: 1.1rem; margin-right: 1.1rem;}
+}
+
+@media screen and (max-width: 640px) {
 	.sidebar h1 {font-size: 1.5rem;}
 	.sidebar h3 {font-size: 1.2rem;}
+}
+
+@media screen and (min-width: 640px) and (max-width: 1365px) {
+  body {font-size: 1.1rem;}
+  .sidebar h1 {font-size: 1.8rem;}
+	.sidebar h3 {font-size: 1.5rem;}
+}
+
+@media screen and (min-width: 1366px) {
+  body {font-size: 1.4rem;}
+  .card {font-size: 1.1rem;}
+  .d-xl-block {display: inline-block !important;}
 }
 
 /* Media Queries for Responsive design*/
@@ -59,7 +83,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Yanone Kaffeesatz', sans-serif; }
         transition: transform 0.5s ease;
         display: block;
         position: fixed;
-        top: 0.5em;
+        top: 0.2em;
         width: 3.25em;
         right: 0.5em;
         height: 2.25em;
@@ -68,7 +92,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Yanone Kaffeesatz', sans-serif; }
     .headerToggle .toggle {
         position: absolute;
         right: 0.5em;
-        top: 0.5em;
+        top: 0.2em;
         width: 100%;
         height: 100%;
         outline: 0;

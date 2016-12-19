@@ -1,5 +1,5 @@
 <div class="tagline">
-    <span class="pr-1 d-block">
+    <span class="pr-1 d-block d-xl-block">
       <i class="fa fa-calendar"></i>
       <time itemprop="datePublished">
         {% assign d = include.date | date: "%d" | plus:'0' %}
@@ -13,7 +13,7 @@
         {{ include.date | date: "%Y" }}
       </time>
     </span>
-    <span class="pr-1 d-block">
+    <span class="pr-1 d-block d-xl-block">
       <i class="fa fa-tags"></i>
       {% for tag in site.tags %}
       {{ tag[0] }} {% endfor %}

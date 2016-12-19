@@ -20,10 +20,12 @@
         {% endif %}
     </div>
 
-    <div class="col-xs-4 text-xs-center">
+    <div class="col-xs-4 text-xs-center hidden-sm-down">
         <p class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</p>
     </div>
-
+    <div class="col-xs-4 text-xs-center hidden-md-up">
+        <p class="page_number">Page: {{ paginator.page }}</p>
+    </div>
     <div class="col-xs-4 text-xs-right">
         {% if paginator.next_page %}
         <a class="btn btn-secondary btn-sm" href="/{{ site.paginate_path | replace: ':num', paginator.next_page }}" aria-label="Next">
