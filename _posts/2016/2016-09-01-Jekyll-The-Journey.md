@@ -22,6 +22,7 @@ From the [Jekyll](https://jekyllrb.com){:target="_blank"} site, Jekyll transform
 Head to the [Jekyll](https://jekyllrb.com/docs/quickstart/){:target="_blank"} website, it has a lot of resources. You can also check [Jekyll tips](http://jekyll.tips/){:target="_blank"} website. They have video tutorials and templates that will help you start understand Jekyll quickly and start your journey in building a kick ass site. Btw, I am not trying to advertise Jekyll, I just fell in <i class="fa fa-heart" title="Love"></i> .
 
 First install Jekyll using the following commands:
+
 ```bash
 * gem install jekyll bundler
 * ~ $ jekyll new my-awesome-site
