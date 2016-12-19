@@ -25,10 +25,6 @@ author:
   bio: Software Engineer
   image: "/assets/images/zein.png"
 
-# set it as url of an image
-sidebar_background_image: "/assets/images/fabric.png"
-content_background_image: "/assets/images/grid.png"
-
 permalink: /blog/:year/:month/:day/:title
 
 gems:
