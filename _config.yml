@@ -5,6 +5,11 @@ paginate: 10 # pagination based on number of posts
 paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 markdown: kramdown
+kramdown:
+  input: GFM
+  
+highlighter: rouge
+
 google_analytics: UA-30555770-1
 title: Zein Sleiman
 
