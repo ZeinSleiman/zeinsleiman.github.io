@@ -15,8 +15,7 @@
     </span>
     <span class="pr-1 d-block d-xl-block">
       <i class="fa fa-tags"></i>
-      {% for tag in site.tags %}
-      {{ tag[0] }} {% endfor %}
+      {{ page.tags | join: ', '}}{{ post.tags | join: ', ' }}
     </span>
     {% if page.layout == 'post' %}
     <span>
