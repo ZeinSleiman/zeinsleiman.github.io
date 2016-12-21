@@ -7,20 +7,12 @@ exclude: ["README.md"] # files to exclude
 markdown: kramdown
 kramdown:
   input: GFM
-  
+
 highlighter: rouge
 
 google_analytics: UA-30555770-1
 title: Zein Sleiman
 
-defaults:
-  -
-    scope:
-      path: "" # empty string for all files
-    values:
-      title: zein sleiman
-
-description: Stylish Jekyll Theme
 author:
   name: Zein Sleiman
   email: zein.hajjsleiman@gmail.com

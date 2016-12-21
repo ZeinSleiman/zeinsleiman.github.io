@@ -31,7 +31,7 @@ First install Jekyll using the following commands:
 * Now browse to http://localhost:4000
 ```
 
-Then download a Jekyll template, there are a lot on the web. You can download this website template from (link).
+Then download a Jekyll template, there are a lot on the web. You can download this website template from [Github](https://github.com/ZeinSleiman/Jekylltheme){:target="_blank"}.
 Once that is set, you can start reading the template and modifying it while watching the videos on the Jekyll tips website.
 
 I found that the documentation is really easy to understand and in few hours you can have a site ready for deployment. I used github to deploy my site. It is very easy. The difficult part was really working on the appearance of the site. You get free hosting with github pages and maintaining the site is easier than you think. Any commits you push to your repository, will be immediately published to your site. Deployment is so simple and seamless.
