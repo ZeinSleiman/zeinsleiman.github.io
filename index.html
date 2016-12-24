@@ -3,7 +3,7 @@ layout: default
 title: Blog
 ---
 {% for post in paginator.posts %}
-<div itemscope itemtype="http://schema.org/Blog">
+<div itemscope itemtype="http://schema.org/Blog" class="blog">
     <article class="home my-3 m-m-3" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
         <h1 itemprop="name">
           <a href="{{ site.BASE_PATH }}{{ post.url }}" itemprop="url">{{ post.title }}</a>

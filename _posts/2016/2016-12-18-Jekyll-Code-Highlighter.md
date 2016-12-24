@@ -16,6 +16,7 @@ Using github pages I was seeing this:
 
 ![example](/assets/images/codehighlightergonewrong.png "Code highlighted incorrectly")
 
+<!-- continue -->
 
 Searching online and reading few comments on Jekyll repository, I found that you need to add an extra line between the text and the code block.
 
