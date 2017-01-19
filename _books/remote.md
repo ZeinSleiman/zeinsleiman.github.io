@@ -2,7 +2,8 @@
 title: Remote
 subtitle: Office Not Required
 author: Jason Fried, David Heinemeier Hansson
-status: future
-progress: 0
+status: inprogress
+progress: 28
 aria_identifier: remote
+year: 2017
 ---

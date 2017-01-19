@@ -5,17 +5,27 @@ title: Blog Archives
 <h1>Blog Archives</h1>
 
 <div class="archives mt-3" itemscope itemtype="http://schema.org/Blog">
-{% assign sort_posts = site.posts | sort: "date" | reverse | group_by: "date" %}
+  {% for post in site.posts  %}
+      {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+      {% capture previous_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
-{% for year in sort_posts %}
-      <h4 class="year">{{ year.name | date: "%Y" }}</h2>
-      <hr/>
-      <ul class="mb-3">
-      {% for post in year.items %}
-        <li>
-          <h5 class="title"><a href="{{ post.url }}">{{post.title}}</a></h3>
-        </li>
-    {% endfor %}
-    </ul>
-{% endfor %}
+      {% if forloop.first %}
+      <h3>{{this_year}}</h3>
+      <hr>
+      <ul>
+      {% endif %}
+
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+
+      {% if forloop.last %}
+      </ul>
+      {% else %}
+          {% if this_year != previous_year %}
+          </ul>
+          <h3>{{previous_year}}</h3>
+          <hr>
+          <ul>
+          {% endif %}
+      {% endif %}
+  {% endfor %}
 </div>

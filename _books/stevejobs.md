@@ -5,4 +5,5 @@ author: Walter Isaacson
 status: read
 progress: 100
 aria_identifier: stevejobs
+year: 2015
 ---

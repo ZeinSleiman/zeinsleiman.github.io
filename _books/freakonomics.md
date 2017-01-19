@@ -5,4 +5,5 @@ author: Steven D. Levitt, Stephen J. Dubner
 status: read
 progress: 100
 aria_identifier: freakonomics
+year: 2015
 ---
