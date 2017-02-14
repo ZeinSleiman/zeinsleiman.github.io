@@ -16,7 +16,9 @@ When you write the clone command
 git-tf clone https://myaccount.visualstudio.com/DefaultCollection $/MyProject/MyBranch --deep
 ```
 
-It is very important to keep __The DefaultCollection__ in the account url although you wont see it in the project url when you access the account using the browser. You will see **https://myaccount.visualstudio.com/MyBigProject** .
+It is very important to keep __The DefaultCollection__ in the account url although you wont see it in the project url when you access the account using the browser.
+You will see
+**https://myaccount.visualstudio.com/MyBigProject** .
 
 After you enter the command you will be prompted to enter the username and password. If you have two step verification enabled the online password wont work. You need to use a personal access token from the account security section.
 <!-- continue -->
