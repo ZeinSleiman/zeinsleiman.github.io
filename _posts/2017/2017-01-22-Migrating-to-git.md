@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Moving my site to Jekyll - The Journey
+title: Migrating from TFS to Git
 tags: [personal, blog, cms]
 excerpt_separator: <!-- continue -->
 published: true
