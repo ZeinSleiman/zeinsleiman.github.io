@@ -25,7 +25,7 @@ As an example instead of this
 <div class="card">
 <div class="card-block">
 First install Jekyll using the following commands:
-<br>
+<div style="background-color: #f64929; height: 1em;"></div>
 ```bash
 <br>
 * gem install jekyll bundler
@@ -46,8 +46,8 @@ you have to do this
 <div class="card">
 <div class="card-block">
 First install Jekyll using the following commands:
-<br>
-<br>
+<div class="space-highlight"></div>
+<div style="background-color: #f64929; height: 1em;"></div>
 ```bash
 <br>
 * gem install jekyll bundler
