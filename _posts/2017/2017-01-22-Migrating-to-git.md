@@ -21,7 +21,7 @@ It is very important to keep __The DefaultCollection__ in the account url althou
 After you enter the command you will be prompted to enter the username and password. If you have two step verification enabled the online password wont work. You need to use a personal access token from the account security section.
 <!-- continue -->
 Generating a personal access token is easy but I included some screenshots to help.
-{% include image.html url="/assets/images/accountaccess.png" description="Access Account Security Settings" title="Access Account Security Settings"%}
+{% include image.html url="/assets/images/accountsettings.png" description="Access Account Security Settings" title="Access Account Security Settings"%}
 
 Once you are in the security page in the Personal access token click **Add**
 {% include image.html url="/assets/images/accesstoken.png" description="Access Account Security Settings" title="Access Account Security Settings"%}
