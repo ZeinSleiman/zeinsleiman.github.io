@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif; }
 .not-found {font-size: 6rem; min-height: 650px; margin-top: 175px;}
 .blog img {max-width: 100%; height: auto;}
 .highlighter-rouge * {font-family: 'Roboto Slab', sans-serif !important;}
+.word-nowrap {word-wrap:break-word;}
 
 .highlight {
   background: #343535;
