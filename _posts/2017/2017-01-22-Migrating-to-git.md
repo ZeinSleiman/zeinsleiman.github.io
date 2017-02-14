@@ -7,7 +7,7 @@ published: true
 ---
 
 Today at work we discussed the idea of moving from TFS to git. Currently we have the code in the cloud on [Visual Studio Team Services](https://www.visualstudio.com/vso/){:target="_blank"}. Curious about how long it will take to do the move, I went ahead and allocated two hours of my time to do this. As usual I start by [googling](https://www.google.ca/search?q=migrate+tfs+to+git){:target="_blank"} "migrate tfs to git". The second result was a link to this [article](https://chriskirby.net/blog/migrate-an-existing-project-from-tfs-to-github-with-changeset-history-intact){:target="_blank"}, a
-very well written article by Chris Kerby that have all the information you need to do the move. However, I faced some issues that I had to figure out on my own and decided to share and keep as a reference.
+very well written article by Chris Kerby that has all the information you need to do the move. However, I faced some issues that I had to figure out on my own and decided to share and keep as a reference.
 
 When you write the clone command
 
