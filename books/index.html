@@ -3,8 +3,10 @@ layout: page
 title: Books Collections
 published: true
 ---
-{% assign groupedBooks = site.books | group_by: "status" %}
+{% assign groupedBooks = site.books | sort: "status" | group_by: "status" %}
 {% for books in groupedBooks %}
+{% assign loopIndex = forloop.index %}
+{% assign loopCount = forloop.length - 1 %}
   <h1>
   {% case books.name %}
     {% when "read" %}
@@ -43,4 +45,7 @@ published: true
     </div>
   {% endfor %}
 </div>
+{% if loopIndex >= 1 and loopIndex != loopCount %}
+<hr>
+{% endif %}
 {% endfor %}
