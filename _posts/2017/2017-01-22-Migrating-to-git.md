@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Migrating from TFS to Git
-tags: [personal, blog, cms]
+tags: [TFS, Git, visualstudio]
 excerpt_separator: <!-- continue -->
 published: true
 ---
