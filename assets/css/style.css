@@ -3,6 +3,11 @@ body { color: #525252; }
 body a { color: #f64929; }
 body a:hover, body a:focus { color: #969a99; text-decoration: none; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif; }
+blockquote {padding: 0.5em 0.5em;
+  background-color: #fff; border-radius: 5px;
+  border-color: #cdcdcd;
+  box-shadow: 2px 2px 2px}
+blockquote p {margin: 0;}
 
 .card { border: none; }
 .fa-heart { color: red; }
