@@ -6,10 +6,10 @@ excerpt_separator: <!-- continue -->
 published: true
 ---
 
-I was working on a project at work that requires connecting our code to Atlas database. [Atlas](https://www.mongodb.com/cloud){:target="_blank"} is a hosted MongoDB as a service. In other words MongoDB in the cloud. Since the project was just a proof of concept I tried connecting to the Free Tier but I faced a connection problem using the C# driver. After confirming with MongoDB support that there was a bug that wont allow me to connect to the free tier, I decided to install the community edition on my laptop. Up to this day the bug has not been resolved. You can follow it on [github](https://github.com/dotnet/corefx/issues/17427#event-1040073361){:target="_blank"}.
+I was working on a project that requires connecting our code to Atlas database. [Atlas](https://www.mongodb.com/cloud){:target="_blank"} is a cloud-hosted mongodb database. Since the project was just a proof of concept I tried connecting to the Free Tier but I faced a connection problem using the C# driver. After confirming with MongoDB support that there was a bug that wont allow me to connect to the free tier, I decided to install the community edition on my laptop. Up to this day the bug has not been resolved. You can follow it on [github](https://github.com/dotnet/corefx/issues/17427#event-1040073361){:target="_blank"}.
 
 Installing community edition is easy and straight forward. I followed the documentation on the [MongoDB site](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/){:target="_blank"}.
-If you are using OS X like me you will need [homebrew](https://brew.sh/){:target="_blank"}.
+If you are using OS X like me, you will need [homebrew](https://brew.sh/){:target="_blank"}.
 
 Start with the command
 
@@ -61,7 +61,7 @@ open .bash_profile -a atom
 
 but you can use any text editor you want. Add the following line `export PATH="/usr/local/opt/mongodb/bin/:$PATH"`
 
-Now you are ready to start the database server. We can use mongod. mongod is the deamon that will run the database server locally. When you call mongod specify the path where the data will be saved.
+Now you are ready to start the database server. We can use mongod. Mongod is the deamon that will run the database server locally. When you call mongod specify the path where the data will be saved.
 ```shell
 mongod --dbpath /Users/UserName/Documents/data
 ```
