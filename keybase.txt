@@ -1,4 +1,54 @@
----
-layout: none
-permalink: .well-known/keybase.txt
----
+==================================================================
+https://keybase.io/zeinsleiman
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://zeinsleiman.com
+  * I am zeinsleiman (https://keybase.io/zeinsleiman) on keybase.
+  * I have a public key ASDYSZPJ0ubzSkFVvQIWhM8snzbjSpdX0Fz61q7ryGtFSQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120d84993c9d2e6f34a4155bd021684cf2c9f36e34a9757d05cfad6aeebc86b45490a",
+            "host": "keybase.io",
+            "kid": "0120d84993c9d2e6f34a4155bd021684cf2c9f36e34a9757d05cfad6aeebc86b45490a",
+            "uid": "911ad19f06f036b877efc8d2205f5d19",
+            "username": "zeinsleiman"
+        },
+        "service": {
+            "hostname": "zeinsleiman.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.22"
+    },
+    "ctime": 1495244850,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1495244833,
+        "hash": "819d41b660905c5bbc1a99fdfc28ada07eeb90d87491c246f78e3d90a2ec5a64654cacd81c6f647012c1f66786548cd685afbbef0d371854f13e94bd526392dc",
+        "seqno": 1096989
+    },
+    "prev": "19a376642410946294ece78db6f499116d79e5fece16ff2fdc8719d3d0d9424b",
+    "seqno": 13,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg2EmTydLm80pBVb0CFoTPLJ8240qXV9Bc+tau68hrRUkKp3BheWxvYWTFAvt7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZDg0OTkzYzlkMmU2ZjM0YTQxNTViZDAyMTY4NGNmMmM5ZjM2ZTM0YTk3NTdkMDVjZmFkNmFlZWJjODZiNDU0OTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZDg0OTkzYzlkMmU2ZjM0YTQxNTViZDAyMTY4NGNmMmM5ZjM2ZTM0YTk3NTdkMDVjZmFkNmFlZWJjODZiNDU0OTBhIiwidWlkIjoiOTExYWQxOWYwNmYwMzZiODc3ZWZjOGQyMjA1ZjVkMTkiLCJ1c2VybmFtZSI6InplaW5zbGVpbWFuIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJ6ZWluc2xlaW1hbi5jb20iLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjIyIn0sImN0aW1lIjoxNDk1MjQ0ODUwLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0OTUyNDQ4MzMsImhhc2giOiI4MTlkNDFiNjYwOTA1YzViYmMxYTk5ZmRmYzI4YWRhMDdlZWI5MGQ4NzQ5MWMyNDZmNzhlM2Q5MGEyZWM1YTY0NjU0Y2FjZDgxYzZmNjQ3MDEyYzFmNjY3ODY1NDhjZDY4NWFmYmJlZjBkMzcxODU0ZjEzZTk0YmQ1MjYzOTJkYyIsInNlcW5vIjoxMDk2OTg5fSwicHJldiI6IjE5YTM3NjY0MjQxMDk0NjI5NGVjZTc4ZGI2ZjQ5OTExNmQ3OWU1ZmVjZTE2ZmYyZmRjODcxOWQzZDBkOTQyNGIiLCJzZXFubyI6MTMsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAI5iNiPyGELdrT12BT1Q+1/SaymJTgE46mDFzT/e+QAUgIPYtvTOIVcxFgXnyD0bxRuy7e4njRCOawS9J+GKjAqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKN8151YG8oVyeCHLOIDWW57RJEGSQS65cS7icQfI6jjo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/zeinsleiman
+
+==================================================================
