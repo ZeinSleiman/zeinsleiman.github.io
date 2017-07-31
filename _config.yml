@@ -24,7 +24,7 @@ author:
 
 permalink: /blog/:year/:month/:day/:title
 
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-seo-tag
 
