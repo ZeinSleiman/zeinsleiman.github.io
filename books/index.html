@@ -15,6 +15,8 @@ published: true
     Books I am reading
     {% when "future" %}
     Books I want to read
+    {% when "onhold" %}
+    Books on hold
   {% endcase %}
   </h1>
 <div class="card-columns">
@@ -45,7 +47,7 @@ published: true
     </div>
   {% endfor %}
 </div>
-{% if loopIndex >= 1 and loopIndex != loopCount %}
+{% if loopIndex <= loopCount%}
 <hr>
 {% endif %}
 {% endfor %}
