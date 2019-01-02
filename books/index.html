@@ -7,8 +7,8 @@ published: true
 {% for books in groupedBooks %}
 {% assign loopIndex = forloop.index %}
 {% assign loopCount = forloop.length | minus: 1 %}
-  <h1>
-  {% case books.name %}
+<h2>
+    {% case books.name %}
     {% when "read" %}
     Books I read
     {% when "inprogress" %}
@@ -17,37 +17,26 @@ published: true
     Books I want to read
     {% when "onhold" %}
     Books on hold
-  {% endcase %}
-  </h1>
+    {% endcase %}
+</h2>
 <div class="card-columns">
-  {% for book in books.items %}
+    {% for book in books.items %}
     <div class="card" itemscope itemtype="http://schema.org/Book">
-      <div class="card-block">
-        <h4 class="card-title">
-          <a href="{{book.book_link}}" target="_blank" itemprop="name"> {{book.title}} </a>
-        </h4>
-      </div>
-      <ul class="list-group list-group-flush">
-        {% if book.subtitle %}
-        <li class="list-group-item" itemprop="about"> {{book.subtitle}}</li>
-        {% endif %}
-        <li class="list-group-item">
-            <span>Author:</span>
-            <span itemprop="author"> {{book.author}} </span>
-        </li>
+        <div class="card-header text-center">
+            <a href="{{book.book_link}}" target="_blank" itemprop="name"> {{book.title}} </a>
+        </div>
         {% if book.status == "inprogress" %}
-        <li class="list-group-item">
-            <span>Progress:</span>
-            <span id="progress-{{book.aria_identifier}}">{{book.progress}}%</span>
-            <progress class="progress progress-success" value="{{book.progress}}" max="100"
-                      aria-describedby="progress-{{book.aria_identifier}}"></progress>
-        </li>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <span>Progress:</span>
+                <span id="progress-{{book.aria_identifier}}">{{book.progress}}%</span>
+                <progress class="progress progress-success" value="{{book.progress}}" max="100" aria-describedby="progress-{{book.aria_identifier}}"></progress>
+            </li>
+        </ul>
         {% endif %}
-      </ul>
     </div>
-  {% endfor %}
+    {% endfor %}
 </div>
-{% if loopIndex <= loopCount%}
-<hr>
-{% endif %}
-{% endfor %}
+{% if loopIndex <= loopCount%} <hr>
+    {% endif %}
+    {% endfor %}

@@ -1,6 +1,6 @@
 <div class="tagline">
     <span class="pr-1 d-block d-xl-block">
-      <i class="fa fa-calendar"></i>
+      <i class="fas fa-calendar-alt"></i>
       <time itemprop="datePublished">
         {% assign d = include.date | date: "%d" | plus:'0' %}
         {{ include.date | date: "%B" }}
@@ -14,12 +14,12 @@
       </time>
     </span>
     <span class="pr-1 d-block d-xl-block">
-      <i class="fa fa-tags"></i>
+      <i class="fas fa-tags"></i>
       {{ page.tags | join: ', '}}{{ post.tags | join: ', ' }}
     </span>
     {% if page.layout == 'post' %}
     <span>
-      <i class="fa fa-book"></i>
+      <i class="fas fa-book"></i>
       {% assign words = content | number_of_words %}
       {% if words < 360 %}
         1 min

@@ -1,85 +1,82 @@
 <!-- sidebar.html -->
-<div>
-	<header class="sidebar-header text-xs-center" role="banner">
-		{% if site.author.image %}
-		<a href="{{ site.BASE_PATH }}/">
-			<img src="{{ site.author.image }}" class="rounded-circle" />
+<header class="sidebar-header text-center" role="banner">
+	{% if site.author.image %}
+	<a href="{{ site.BASE_PATH }}/">
+		<img src="{{ site.author.image }}" class="rounded-circle" />
+	</a>
+	{% endif %}
+	<h1 class="default-font">
+		<a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
+	</h1>
+	{% if site.author.bio %}
+	<h3 class="default-font">
+		{{ site.author.bio }}
+	</h3>
+	{% endif %}
+</header>
+<nav class="nav flex-column align-middle my-3">
+	<li class="nav-item">
+		<a class="nav-link d-flex justify-content-between" href="/">
+			<span>Home</span>
+			<i class="fa fa-home"></i>
 		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link d-flex justify-content-between" href="/about/">
+			<span class="d-inline-block">About</span>
+			<i class="fa fa-user"></i>
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link d-flex justify-content-between" href="/archive/">
+			<span class="d-inline-block">Archive</span>
+			<i class="fa fa-archive"></i>
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link d-flex justify-content-between" href="/books/">
+			<span class="d-inline-block">Readings</span>
+			<i class="fa fa-book"></i>
+		</a>
+	</li>
+</nav>
+<div class="text-center pt-2">
+	<ul class="list-inline">
+		{% if site.author.github %}
+		<li class="list-inline-item mr-2">
+			<a href="https://github.com/{{ site.author.github }}" target="_blank">
+				<i class="fab fa-github fa-2x"></i>
+			</a>
+		</li>
 		{% endif %}
-		<h1 class="default-font">
-        <a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
-    </h1>
-		{% if site.author.bio %}
-		<h3 class="default-font">
-			{{ site.author.bio }}
-		</h3>
+		{% if site.author.keybase %}
+		<li class="list-inline-item mr-2">
+			<a href="https://keybase.io/{{ site.author.keybase}}" target="_blank">
+				<i class="fab fa-keybase fa-2x"></i>
+			</a>
+		</li>
 		{% endif %}
-	</header>
-	<nav class="nav align-middle my-2">
-		<li class="nav-item">
-			<a href="/">
-				<span class="d-inline-block">Home</span>
-				<i class="fa fa-home"></i>
+		{% if site.author.twitter %}
+		<li class="list-inline-item mr-2">
+			<a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">
+				<i class="fab fa-twitter fa-2x"></i>
 			</a>
 		</li>
-		<li class="nav-item">
-			<a href="/about/">
-				<span class="d-inline-block">About</span>
-				<i class="fa fa-user"></i>
+		{% endif %}
+		{% if site.author.linkedin %}
+		<li class="list-inline-item mr-2">
+			<a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank">
+				<i class="fab fa-linkedin fa-2x"></i>
 			</a>
 		</li>
-		<li class="nav-item">
-			<a href="/archive/">
-				<span class="d-inline-block">Archive</span>
-				<i class="fa fa-archive"></i>
+		{% endif %}
+		{% if site.author.email %}
+		<li class="list-inline-item">
+			<a href="mailto:{{ site.author.email }}" target="_blank">
+				<i class="fas fa-envelope fa-2x"></i>
 			</a>
 		</li>
-		<li class="nav-item">
-			<a href="/books/">
-				<span class="d-inline-block">Readings</span>
-				<i class="fa fa-book"></i>
-			</a>
-		</li>
-		<li class="nav-item"></li>
-	</nav>
-	<div class="text-xs-center pt-2">
-		<ul class="list-inline">
-			{% if site.author.github %}
-			<li class="list-inline-item mr-1">
-				<a href="https://github.com/{{ site.author.github }}" target="_blank">
-					<i class="fa fa-github fa-2x"></i>
-				</a>
-			</li>
-			{% endif %}
-			{% if site.author.keybase %}
-			<li class="list-inline-item mr-1">
-					<a href="https://keybase.io/{{ site.author.keybase}}" target="_blank">
-						<i class="fa fa-key fa-2x"></i>
-					</a>
-			</li>
-			{% endif %}
-			{% if site.author.twitter %}
-			<li class="list-inline-item mr-1">
-				<a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">
-					<i class="fa fa-twitter fa-2x"></i>
-				</a>
-			</li>
-			{% endif %}
-			{% if site.author.linkedin %}
-			<li class="list-inline-item mr-1">
-				<a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank">
-					<i class="fa fa-linkedin fa-2x"></i>
-				</a>
-			</li>
-			{% endif %}
-			{% if site.author.email %}
-			<li class="list-inline-item">
-				<a href="mailto:{{ site.author.email }}" target="_blank">
-					<i class="fa fa-envelope fa-2x"></i>
-				</a>
-			</li>
-			{% endif %}
-		</ul>
-	</div>
+		{% endif %}
+	</ul>
 </div>
 <!-- sidebar.html end -->

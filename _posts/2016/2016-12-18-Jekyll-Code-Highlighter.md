@@ -23,7 +23,7 @@ Searching online and reading few comments on Jekyll repository, I found that you
 As an example instead of this
 
 <div class="card">
-<div class="card-block">
+<div class="card-body">
 First install Jekyll using the following commands:
 <div style="background-color: #f64929; height: 1em;"></div>
 ```bash
@@ -41,10 +41,10 @@ First install Jekyll using the following commands:
 ```
 </div>
 </div>
-
+<br/>
 you have to do this
 <div class="card">
-<div class="card-block">
+<div class="card-body">
 First install Jekyll using the following commands:
 <div class="space-highlight"></div>
 <div style="background-color: #f64929; height: 1em;"></div>
@@ -64,4 +64,4 @@ First install Jekyll using the following commands:
 </div>
 </div>
 
-It is very simple but just make sure you remember it.
+It is very simple but make sure you remember it.

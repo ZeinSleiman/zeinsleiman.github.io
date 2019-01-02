@@ -1,85 +1,192 @@
-body, .default-font { font-family: 'Roboto Slab', sans-serif; }
-body { color: #525252; }
-body a { color: #f64929; }
-body a:hover, body a:focus { color: #969a99; text-decoration: none; }
-h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif; }
-blockquote {padding: 0.5em 0.5em;
-  background-color: #fff; border-radius: 5px;
-  border-color: #cdcdcd;
-  box-shadow: 2px 2px 2px}
-blockquote p {margin: 0;}
+body,
+.default-font {
+    font-family: 'Roboto Slab', sans-serif;
+}
 
-.card { border: none; }
-.fa-heart { color: red; }
-.header-image { margin-left: -15px; overflow: hidden; }
-.no-posts { font-size: 72px; min-height: 600px; margin-top: 300px;}
-.headerToggle { display: none; }
-.main { background-color: #cdcdcd;}
-.affix { position: fixed; }
-.tagline { letter-spacing: 1.5px; font-size: 1rem;}
-.content {min-height: 600px;}
-.not-found {font-size: 6rem; min-height: 650px; margin-top: 175px;}
-.blog img {max-width: 100%; height: auto;}
-.highlighter-rouge * {font-family: 'Roboto Slab', sans-serif !important;}
-.word-nowrap {word-wrap:break-word;}
+body {
+    color: #525252;
+}
+
+body a {
+    color: #f64929;
+}
+
+body a:hover,
+body a:focus {
+    color: #969a99;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+blockquote {
+    padding: 0.5em 0.5em;
+    background-color: #fff;
+    border-radius: 5px;
+    border-color: #cdcdcd;
+    box-shadow: 2px 2px 2px
+}
+
+blockquote p {
+    margin: 0;
+}
+
+.card {
+    border: none;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.header-image {
+    margin-left: -15px;
+    overflow: hidden;
+}
+
+.no-posts {
+    font-size: 72px;
+    min-height: 600px;
+    margin-top: 300px;
+}
+
+.headerToggle {
+    display: none;
+}
+
+.main {
+    background-color: #cdcdcd;
+}
+
+.affix {
+    position: fixed;
+}
+
+.tagline {
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+}
+
+.content {
+    min-height: 600px;
+}
+
+.not-found {
+    font-size: 6rem;
+    min-height: 650px;
+    margin-top: 175px;
+}
+
+.blog img {
+    max-width: 100%;
+    height: auto;
+}
+
+.highlighter-rouge * {
+    font-family: 'Roboto Slab', sans-serif !important;
+    margin-bottom: 1rem;
+}
+
+.word-nowrap {
+    word-wrap: break-word;
+}
 
 .highlight {
-  background: #343535;
-  color: #fff;
-  padding: 0.5em 0.5em;
-  line-height: 2em;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1), 0 -1px 0 rgba(0, 0, 0, 0.5);
+    background: #343535;
+    color: #fff;
+    padding: 0.5em 0.5em;
+    line-height: 2em;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1), 0 -1px 0 rgba(0, 0, 0, 0.5);
 }
 
-.space-highlight {background-color: #f64929; height: 1em; border-bottom: 1px solid white;}
+.space-highlight {
+    background-color: #f64929;
+    height: 1em;
+    border-bottom: 1px solid white;
+}
 
 /* sidebar */
-.sidebar { display: block; padding-top: 5%; padding-left: 0; color: #fff;
-    			 padding-right: 0; background-color: #343535; height: 100%;
+
+.sidebar {
+    display: block;
+    padding-top: 5%;
+    padding-left: 0;
+    color: #fff;
+    padding-right: 0;
+    background-color: #343535;
+    height: 100%;
 }
-.sidebar a, .sidebar a:focus { color: #fff; }
-.sidebar a:hover { color: #f64929; }
+
+.sidebar a,
+.sidebar a:focus {
+    color: #fff;
+}
+
+.sidebar a:hover {
+    color: #f64929;
+}
+
 .sidebar .nav .nav-item {
-	padding: 0.2em 1em;
-	border-top: solid 1px rgba(255, 255, 255, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.15);
+    padding: 0.2em 1em;
+    line-height: 10px;
+    border-top: solid 1px rgba(255, 255, 255, 0.05);
+    box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.15);
 }
-.sidebar .nav-item span { width: 88%; }
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
-  .card-columns {
-      column-count: 2;
+    .card-columns {
+        column-count: 2;
     }
 }
 
 @media screen and (min-width: 767px) {
-  .m-m-3 {margin-top: 1.5rem !important; margin-left: 1.1rem; margin-right: 1.1rem;}
+    .m-m-3 {
+        margin-top: 1.5rem !important;
+        margin-left: 1.1rem;
+        margin-right: 1.1rem;
+    }
 }
 
 @media screen and (max-width: 640px) {
-	.sidebar h1 {font-size: 1.5rem;}
-	.sidebar h3 {font-size: 1.2rem;}
-}
-
-@media screen and (min-width: 640px) and (max-width: 1365px) {
-  body {font-size: 1.1rem;}
-  .sidebar h1 {font-size: 1.8rem;}
-	.sidebar h3 {font-size: 1.5rem;}
+    .sidebar h1, article h1, .content h1 {
+        font-size: 1.5rem;
+    }
+    .content h2 {
+        font-size: 1.35rem;
+    }
+    .sidebar h3, article h3, .content h3 {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (min-width: 1366px) {
-  body {font-size: 1.4rem;}
-  .card {font-size: 1.1rem;}
-  .d-xl-block {display: inline-block !important;}
+    body {
+        font-size: 1.4rem;
+    }
+    .card {
+        font-size: 1.1rem;
+    }
+    .d-xl-block {
+        display: inline-block !important;
+    }
 }
 
 /* Media Queries for Responsive design*/
+
 @media screen and (max-width: 767px) {
     .sidebar {
         overflow-y: hidden;
     }
-    html, body {
+    html,
+    body {
         overflow-x: hidden;
     }
     .main.active {
@@ -89,7 +196,6 @@ blockquote p {margin: 0;}
         top: 0;
         width: 70%;
     }
-
     /* Burger Menu */
     .headerToggle {
         -moz-backface-visibility: hidden;
@@ -112,16 +218,9 @@ blockquote p {margin: 0;}
         position: absolute;
         right: 0.5em;
         top: 0.2em;
-        width: 100%;
-        height: 100%;
-        outline: 0;
-        border: 0;
         cursor: pointer;
-        font-size: 18px;
         background: rgba(128, 136, 144, 0.5);
         border-radius: 0.35em;
-        font-style: normal;
-        font-weight: normal;
         width: 3.25em;
         height: 2.25em;
         -webkit-font-smoothing: antialiased;
@@ -130,17 +229,14 @@ blockquote p {margin: 0;}
     .headerToggle .toggle .fa-bars {
         text-decoration: none;
         color: #f64929;
-        font-size: 18px;
-        line-height: 2.25em;
-        text-align: center;
-        display: block;
-        line-height: 2.25em;
+        display: block;  
+        margin: auto;
     }
 }
 
 @media screen and (max-width: 767px) and (orientation:landscape) {
-  /* Styles for Landscape screen */
-	.sidebar {
-			overflow-y: scroll;
-	}
+    /* Styles for Landscape screen */
+    .sidebar {
+        overflow-y: scroll;
+    }
 }
