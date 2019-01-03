@@ -23,4 +23,4 @@ Currently, I work at Orderbot Software as a Software Engineer. I work on two app
 ---
 
 ## Little History
-I come from Lebanon, where I finished my Masters Degree in Computer and Telecommunication Engineering. I worked for a year and 4 months as a Technical Consultant. After that I decided to pursue my dream and I came to Vancouver where I finished a two year diploma in Computer System Technology. I graduated in December 2011 and started working in Feb 2012 at [Orderbot Software](http://www.orderbot.com/){:target="_blank"} which got acquired early 2016 by [Weblinc](https://www.weblinc.com/){:target="_blank"}.
+I come from Lebanon, where I finished my Masters Degree in Computer and Telecommunication Engineering. I worked for a year and 4 months as a Technical Consultant. After that I decided to pursue my dream and I came to Vancouver where I finished a two year diploma in Computer System Technology. I graduated in December 2011 and started working in Feb 2012 at [Orderbot Software](http://www.orderbot.com/){:target="_blank" rel="noopener"} which got acquired early 2016 by [Weblinc](https://www.weblinc.com/){:target="_blank" rel="noopener"}.
