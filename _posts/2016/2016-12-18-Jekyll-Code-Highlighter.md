@@ -9,10 +9,10 @@ published: true
 Publishing my site on github pages was going great. I pushed the code to the master branch, then waited few seconds and refreshed the page. Oops, the code block on the page was not rendering as the localhost.
 
 Locally I was seeing this:
-{% include image.html url="/assets/images/codehighlight.webp" description="Code highlighted correctly" title="Code highlighted correctly"%}
+{% include image.html url="/assets/images/codehighlight" description="Code highlighted correctly" title="Code highlighted correctly"%}
 
 Using github pages I was seeing this:
-{% include image.html url="/assets/images/codehighlightergonewrong.webp" description="Code highlighted incorrectly" title="Code highlighted incorrectly"%}
+{% include image.html url="/assets/images/codehighlightergonewrong" description="Code highlighted incorrectly" title="Code highlighted incorrectly"%}
 
 <!-- continue -->
 

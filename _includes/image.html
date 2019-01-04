@@ -1,5 +1,10 @@
+
 <figure class="figure">
-  <img data-src="{{include.url}}" class="figure-img img-fluid rounded lazyload" alt="{{include.description}}" title="{{include.title}}">
+    <picture>
+        <source srcset="{{include.url}}.webp" class="figure-img img-fluid rounded lazyload" alt="{{include.description}}" title="{{include.title}}" type="image/webp">
+        <source srcset="{{include.url}}.png" class="figure-img img-fluid rounded lazyload" alt="{{include.description}}" title="{{include.title}}" type="image/png">
+        <img data-src="{{include.url}}.png" class="figure-img img-fluid rounded lazyload" alt="{{include.description}}" title="{{include.title}}" type="image/png">
+      </picture>
   {% if include.caption %}
   <figcaption class="figure-caption">{{include.caption}}</figcaption>
   {% endif %}

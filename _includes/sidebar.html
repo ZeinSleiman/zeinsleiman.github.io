@@ -2,7 +2,11 @@
 <header class="sidebar-header text-center" role="banner">
 	{% if site.author.image %}
 	<a href="{{ site.BASE_PATH }}/">
-		<img src="{{ site.author.image }}" class="rounded-circle" alt="Zein Sleiman" />
+		<picture>
+			<source srcset="{{ site.author.image}}.webp" class="rounded-circle" alt="Zein Sleiman" type="image/webp">
+			<img src="{{ site.author.image}}.png" class="rounded-circle" alt="Zein Sleiman" type="image/png" />
+		</picture>
+
 	</a>
 	{% endif %}
 	<h1 class="default-font">
