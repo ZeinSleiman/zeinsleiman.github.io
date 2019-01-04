@@ -26,15 +26,15 @@ You will see
 After you enter the command you will be prompted to enter the username and password. If you have two step verification enabled the online password wont work. You need to use a personal access token from the account security section.
 <!-- continue -->
 Generating a personal access token is easy but I included some screenshots to help.
-{% include image.html url="/assets/images/accountsettings.png" description="Access Account Security Settings" title="Access Account Security Settings"%}
+{% include image.html url="/assets/images/accountsettings.webp" description="Access Account Security Settings" title="Access Account Security Settings"%}
 
 Once you are in the security page in the Personal access token click **Add**
-{% include image.html url="/assets/images/accesstoken.png" description="Access Account Security Settings" title="Access Account Security Settings"%}
+{% include image.html url="/assets/images/accesstoken.webp" description="Access Account Security Settings" title="Access Account Security Settings"%}
 
 Choose your account and suitable description
-{% include image.html url="/assets/images/addtoken.png" description="Add Access Token" title="Add Access Token" %}
+{% include image.html url="/assets/images/addtoken.webp" description="Add Access Token" title="Add Access Token" %}
 
 Make sure to copy the token generated and paste in the terminal
-{% include image.html url="/assets/images/tokengenerated.png" description="Token" title="Token Value" %}
+{% include image.html url="/assets/images/tokengenerated.webp" description="Token" title="Token Value" %}
 
 The cloning time will be based on how big your project and history is. For me it took around 3 hrs. After that, just follow the rest of the steps in the article mentioned above, and push to any git repo you want. You can keep the project on visual studio team services or move it to other git hosting services.
