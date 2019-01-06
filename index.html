@@ -11,12 +11,9 @@ title: Blog
     {% include tagline.html date = post.date %}
     <div class="mt-2 text-justify" itemprop="articleBody">
       {{ post.excerpt}}
-      {% assign words = post.content | number_of_words %}
-      {% if words > 150 %}
       <div>
         <a href="{{ site.BASE_PATH }}{{ post.url }}" class="btn btn-secondary" itemprop="url">Read More</a>
       </div>
-      {% endif %}
     </div>
   </article>
 </div>

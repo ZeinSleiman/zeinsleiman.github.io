@@ -11,6 +11,7 @@ Last year was very challenging for me but in a very positive way. I was challeng
 #### 2019 Goals:
 
 - [ ] Writing more blogs about code (at least 24)
+<!-- continue -->
 - [ ] Read 14 books by the end of the year
 - [ ] Exercising on a daily basis
 - [ ] Meditating on a daily basis
