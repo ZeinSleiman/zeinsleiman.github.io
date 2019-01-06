@@ -15,7 +15,7 @@ When you write the clone command
 ```shell
 git-tf clone https://myaccount.visualstudio.com/DefaultCollection $/MyProject/MyBranch --deep
 ```
-
+<!-- continue -->
 It is very important to keep **The DefaultCollection** in the account url although you wont see it in the project url when you access the account using the browser.
 You will see
 
@@ -24,7 +24,7 @@ You will see
 </p>
 
 After you enter the command you will be prompted to enter the username and password. If you have two step verification enabled the online password wont work. You need to use a personal access token from the account security section.
-<!-- continue -->
+
 Generating a personal access token is easy but I included some screenshots to help.
 {% include image.html url="/assets/images/accountsettings" description="Access Account Security Settings" title="Access Account Security Settings"%}
 

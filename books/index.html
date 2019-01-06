@@ -26,13 +26,15 @@ published: true
             <a href="{{book.book_link}}" target="_blank" itemprop="name"> {{book.title}} </a>
         </div>
         {% if book.status == "inprogress" %}
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-                <span>Progress:</span>
-                <span id="progress-{{book.aria_identifier}}">{{book.progress}}%</span>
-                <progress class="progress progress-success" value="{{book.progress}}" max="100" aria-describedby="progress-{{book.aria_identifier}}"></progress>
-            </li>
-        </ul>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <span>Progress:</span>
+                    <span id="progress-{{book.aria_identifier}}">{{book.progress}}%</span>
+                    <progress class="progress" value="{{book.progress}}" max="100" aria-describedby="progress-{{book.aria_identifier}}"></progress>
+                </li>
+            </ul>
+        </div>
         {% endif %}
     </div>
     {% endfor %}

@@ -61,5 +61,5 @@ First install Jekyll using the following commands:
 ```
 </div>
 </div>
-
+<br>
 It is very simple but make sure you remember it.

@@ -1,10 +1,13 @@
-{% if page.previous %}
-  <a class="btn btn-secondary" href="{{ page.previous.url }}" title="{{ page.previous.title }}"><i class="far fa-arrow-alt-left"></i> Older</a>
-{% else %}
+<div class="d-flex justify-content-between">
+  {% if page.previous %}
+  <a class="btn btn-secondary" href="{{ page.previous.url }}" title="{{ page.previous.title }}"><i class="far fa-arrow-alt-left"></i>
+    Older</a>
+  {% else %}
   <a class="btn btn-secondary disabled"><i class="far fa-arrow-alt-left"></i> Older</a>
-{% endif %}
-{% if page.next %}
+  {% endif %}
+  {% if page.next %}
   <a class="pull-right btn btn-secondary" href="{{ page.next.url }}" title="{{ page.next.title }}">Next <i class="far fa-arrow-alt-right"></i></a>
-{% else %}
+  {% else %}
   <a class="pull-right btn btn-secondary disabled">Next <i class="far fa-arrow-alt-right"></i></a>
-{% endif %}
+  {% endif %}
+</div>

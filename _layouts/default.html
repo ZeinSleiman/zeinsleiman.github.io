@@ -40,15 +40,7 @@
 					<a class="toggle"><i class="fas fa-2x fa-bars"></i></a>
 				</div>
 				{{ content }}
-				<footer class="pt-1">
-					<hr />
-					<p class="text-center">
-						Copyright &copy; {{ site.time | date: '%Y' }} {{ site.author.name }} blog content licensed under the Creative
-						Commons
-						<strong><a href="https://creativecommons.org/licenses/by/2.5/" target="_blank" rel="noopener">CC By 2.5</strong></a>. Made by
-						<strong><a href="http://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a></strong>, Coffee <i class="fas fa-coffee"></i> and <i class="fas fa-heart"></i>
-					</p>
-				</footer>
+				{% include footer.html %}
 			</div>
 		</div>
 	</div>
