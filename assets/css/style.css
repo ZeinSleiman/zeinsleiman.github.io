@@ -49,6 +49,10 @@ article a, footer a {
     color: #2dd881;
 }
 
+.highlight .nv {
+    color: #00DFE0;
+}
+
 progress {
     -moz-appearance: none;
     -webkit-appearance: none;
