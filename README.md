@@ -1,8 +1,8 @@
-#zeinsleiman.com
+# zeinsleiman.com
 
 My personal/blog website.
 
-##Theme used
+## Theme used
 
 I used ideas from different themes on the web but mostly used Dbyll theme as a start.
 I will be uploading my site as a theme soon and will add a blog post about it.
