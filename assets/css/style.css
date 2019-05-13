@@ -18,10 +18,15 @@ body a:focus,
     text-decoration: none;
 }
 
+div.highlight {
+    box-shadow: none;
+    background-color: #fff;
+    padding-left: 0;
+}
+
 .sidebar,
-.card,
-.btn-secondary,
 .highlight,
+.btn-secondary,
 blockquote,
 .list-group-item {
     background-color: #2e2e3a;
@@ -29,8 +34,6 @@ blockquote,
 
 .highlight,
 .sidebar,
-.card,
-.card a,
 .sidebar a,
 .sidebar a:focus,
 blockquote {
@@ -173,10 +176,6 @@ ul {
 .blog img {
     max-width: 100%;
     height: auto;
-}
-
-.highlighter-rouge * {
-    margin-bottom: 1rem;
 }
 
 .word-nowrap {
