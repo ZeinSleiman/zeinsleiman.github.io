@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Daily GIT commands 
-tags: [personal, software, engineer, coding, git, terminal]
+tags: [coding, git, terminal]
 excerpt_separator: <!-- continue -->
 published: true
 ---
