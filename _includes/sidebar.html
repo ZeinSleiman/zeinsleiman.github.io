@@ -9,13 +9,13 @@
 
 	</a>
 	{% endif %}
-	<h1 class="default-font">
-		<a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
-	</h1>
-	{% if site.author.bio %}
 	<h3 class="default-font">
-		{{ site.author.bio }}
+		<a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
 	</h3>
+	{% if site.author.bio %}
+	<h4 class="default-font">
+		{{ site.author.bio }}
+	</h4>
 	{% endif %}
 </header>
 <nav class="nav flex-column my-3">
