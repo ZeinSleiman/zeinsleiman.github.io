@@ -25,7 +25,8 @@ div.highlight {
 }
 
 .sidebar,
-.highlight,
+.highlight code,
+.highlight pre,
 .btn-secondary,
 blockquote,
 .list-group-item {
