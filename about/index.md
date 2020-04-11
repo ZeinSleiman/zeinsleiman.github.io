@@ -18,9 +18,9 @@ I am very passionate about programming and love every aspect of it. The challeng
 ---
 
 ## What I do
-Currently, I work at Orderbot Software as a Software Engineer. I work on two applications, the order management system and the clients' websites that we build. We mainly use Asp.Net WebForms C#, JQuery, HTML 5, and CSS3. In my free time, I play football(soccer), read and learn about new technologies and coding languages.
+I work as a Software Engineer in Vancouver, British Columbia building apps and libraries using C#. 
 
 ---
 
 ## Little History
-I come from Lebanon, where I finished my Masters Degree in Computer and Telecommunication Engineering. I worked for a year and 4 months as a Technical Consultant. After that I decided to pursue my dream and I came to Vancouver where I finished a two year diploma in Computer System Technology. I graduated in December 2011 and started working in Feb 2012 at [Orderbot Software](http://www.orderbot.com/){:target="_blank" rel="noopener"} which got acquired early 2016 by [Weblinc](https://www.weblinc.com/){:target="_blank" rel="noopener"}.
+I come from Lebanon, where I finished my Masters Degree in Computer and Telecommunication Engineering. I worked for a year and 4 months as a Technical Consultant. After that I decided to pursue my dream and I came to Vancouver where I finished a two year diploma in Computer System Technology. I graduated in December 2011 and started working since then. 
