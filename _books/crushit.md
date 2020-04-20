@@ -2,9 +2,6 @@
 title: Crush It!
 subtitle: Cash in on your Passion
 author: Gary Vaynerchuk
-status: read
-progress: 100
-aria_identifier: crushit
-book_link: 
+date: 2017-01-01
 year: 2017
 ---

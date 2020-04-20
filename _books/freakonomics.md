@@ -2,9 +2,7 @@
 title: Freakonomics
 subtitle: A Rogue Economist Explores The Hidden Side Of Everything
 author: Steven D. Levitt, Stephen J. Dubner
-status: read
-progress: 100
-aria_identifier: freakonomics
 book_link: http://freakonomics.com/books/
+date: 2015-01-01
 year: 2015
 ---
