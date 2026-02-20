@@ -6,3 +6,7 @@ _site
 /vendor
 *.lock
 assets/images/archive
+.github
+.ai-docs
+.vscode
+.specify
