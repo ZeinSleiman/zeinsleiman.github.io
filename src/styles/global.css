@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sidebar: #2e2e3a;
+  --color-sidebar-text: #ffffff;
+  --color-accent: #f64929;
+  --color-muted: #555572;
+  --font-body: "Roboto Slab", serif;
+  --font-heading: "Roboto", sans-serif;
+}
+
+.prose h2 {
+  @apply text-2xl font-heading font-bold mt-8 mb-3;
+}
+
+.prose h3 {
+  @apply text-xl font-heading font-bold mt-6 mb-2;
+}
+
+.prose h4 {
+  @apply text-lg font-heading font-bold mt-4 mb-2;
+}
+
+.prose p {
+  @apply mb-4;
+}
+
+.prose a {
+  @apply text-accent underline;
+}
+
+/* Prose overrides for blog post content */
+.prose pre {
+  @apply bg-sidebar text-white rounded-lg overflow-x-auto leading-relaxed;
+}
+
+.prose pre.astro-code {
+  @apply p-4;
+}
+
+.prose code {
+  @apply text-[0.9em];
+}
+
+.prose blockquote {
+  @apply bg-sidebar text-white rounded-lg px-4 py-3 my-4 border-l-4 border-accent;
+}
+
+.prose ul,
+.prose ol {
+  @apply pl-6 list-disc;
+}
+
+.prose ol {
+  @apply list-decimal;
+}

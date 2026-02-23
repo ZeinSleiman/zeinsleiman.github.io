@@ -1,0 +1,84 @@
+---
+import ContactBlock from "../components/ContactBlock.astro";
+import { navPages } from "../data/navigation";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Zein Sleiman — Software Engineer" } = Astro.props;
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title} | Zein Sleiman</title>
+  </head>
+  <body class="min-h-screen font-body text-gray-800 flex flex-col lg:flex-row">
+    <aside class="bg-sidebar text-sidebar-text w-full lg:w-72 xl:w-80 lg:min-h-screen lg:fixed lg:top-0 lg:left-0 p-6 lg:p-8 flex flex-col items-center lg:items-stretch">
+      <header class="text-center mb-4 lg:mb-6">
+        <a href="/">
+          <img
+            src="/zein.webp"
+            alt="Zein Sleiman"
+            class="w-20 h-20 lg:w-28 lg:h-28 xl:w-32 xl:h-32 rounded-full object-cover mx-auto"
+          />
+          <h3 class="mt-3 font-heading text-lg lg:text-xl xl:text-2xl font-bold">Zein Sleiman</h3>
+        </a>
+        <h4 class="text-sm lg:text-base opacity-80 font-normal">Software Engineer</h4>
+      </header>
+
+      <nav class="w-full">
+        <ul class="flex flex-row lg:flex-col gap-2 lg:gap-0 justify-center lg:justify-start list-none p-0">
+          {navPages.map((page) => (
+            <li class="lg:border-t lg:border-white/10">
+              <a
+                href={page.slug}
+                aria-current={currentPath === page.slug ? "page" : undefined}
+                class="flex justify-between items-center px-2 py-2 lg:py-3 text-sidebar-text hover:text-accent transition-colors text-sm lg:text-base"
+              >
+                <span>{page.title}</span>
+                <span class="hidden lg:inline">{page.icon}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <ContactBlock />
+    </aside>
+
+    <main class="lg:ml-72 xl:ml-80 flex-1 px-6 py-8 lg:px-10 lg:py-10 w-full">
+      <slot />
+
+      <footer class="border-t border-gray-200 pt-4 mt-12 text-center text-sm text-gray-500">
+        <p>
+          &copy; {new Date().getFullYear()} Zein Sleiman. Content licensed under
+          <a
+            href="https://creativecommons.org/licenses/by/2.5/"
+            target="_blank"
+            rel="noopener"
+            class="hover:text-accent"
+          >CC By 2.5</a>. Made with
+          <a href="https://astro.build/" target="_blank" rel="noopener" class="hover:text-accent">Astro</a>, Coffee ☕ and ❤️
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

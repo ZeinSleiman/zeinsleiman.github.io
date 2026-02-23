@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("blog", ({ data }) => data.published !== false))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+// Group posts by year
+const byYear = posts.reduce<Record<string, typeof posts>>((acc, post) => {
+  const year = post.data.date.getFullYear().toString();
+  (acc[year] ??= []).push(post);
+  return acc;
+}, {});
+const years = Object.keys(byYear).sort((a, b) => Number(b) - Number(a));
+---
+
+<BaseLayout title="Archive">
+  <h1 class="font-heading text-3xl lg:text-4xl font-bold mb-6">Blog Archives</h1>
+
+  {years.length > 0 ? (
+    years.map((year) => (
+      <section class="mb-8">
+        <h3 class="font-heading text-xl lg:text-2xl font-bold">{year}</h3>
+        <hr class="my-2 border-gray-200" />
+        <ul class="list-disc pl-6 space-y-1">
+          {byYear[year].map((post) => (
+            <li><a href={`/blog/${post.id.replace(/\.md$/, "")}/`} class="hover:text-accent transition-colors">{post.data.title}</a></li>
+          ))}
+        </ul>
+      </section>
+    ))
+  ) : (
+    <p class="text-gray-400 italic py-8">
+      The archive is starting fresh — new entries will appear here as they are published.
+    </p>
+  )}
+</BaseLayout>

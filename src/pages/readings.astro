@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ReadingCard from "../components/ReadingCard.astro";
+import { readings } from "../data/readings";
+
+const statusOrder = { read: 0, onhold: 1, future: 2 } as const;
+const sorted = [...readings].sort((a, b) => {
+  const s = statusOrder[a.status] - statusOrder[b.status];
+  if (s !== 0) return s;
+  return a.title.localeCompare(b.title);
+});
+
+const read = sorted.filter((r) => r.status === "read");
+const onhold = sorted.filter((r) => r.status === "onhold");
+const future = sorted.filter((r) => r.status === "future");
+---
+
+<BaseLayout title="Readings">
+  <h1 class="font-heading text-3xl lg:text-4xl font-bold mb-6">Readings</h1>
+
+  {read.length > 0 && (
+    <section class="mb-8">
+      <h2 class="font-heading text-xl font-bold mb-4 text-gray-700">Read ({read.length})</h2>
+      {read.map((r) => <ReadingCard reading={r} />)}
+    </section>
+  )}
+
+  {onhold.length > 0 && (
+    <section class="mb-8">
+      <h2 class="font-heading text-xl font-bold mb-4 text-gray-700">On Hold ({onhold.length})</h2>
+      {onhold.map((r) => <ReadingCard reading={r} />)}
+    </section>
+  )}
+
+  {future.length > 0 && (
+    <section class="mb-8">
+      <h2 class="font-heading text-xl font-bold mb-4 text-gray-700">To Read ({future.length})</h2>
+      {future.map((r) => <ReadingCard reading={r} />)}
+    </section>
+  )}
+</BaseLayout>
