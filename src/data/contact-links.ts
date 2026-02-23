@@ -17,7 +17,7 @@ export const contactLinks: ContactLink[] = [
   {
     id: "linkedin",
     label: "LinkedIn",
-    url: "https://linkedin.com/in/zeinhajjsleiman",
+    url: "https://linkedin.com/in/zeinsl",
     icon: "linkedin",
     order: 2,
   },
