@@ -1,11 +1,32 @@
 # zeinsleiman.com
 
-My personal/blog website.
+Personal blog and portfolio — now powered by [Astro](https://astro.build/) and deployed on GitHub Pages.
 
-## Theme used
+## Quick start
 
-I used ideas from different themes on the web but mostly used Dbyll theme as a start.
-I will be uploading my site as a theme soon and will add a blog post about it.
-If you cant wait, download this one and start.
+```bash
+npm install        # install dependencies
+npm run dev        # start local dev server at http://localhost:4321
+npm run build      # build static site to dist/
+npm run preview    # preview production build locally
+```
 
-Have fun and thanks for checking my site.
+## Structure
+
+```
+src/
+├── layouts/        BaseLayout (shared sidebar, nav, contact block, footer)
+├── pages/          index, about, archive, readings
+├── components/     ContactBlock, ReadingCard
+├── data/           contact-links.ts, navigation.ts, readings.ts
+└── styles/         site.css
+public/             favicon, robots.txt
+```
+
+## Contact links
+
+Only **GitHub** and **LinkedIn** are shown. Email and Keybase were intentionally removed.
+
+## Legacy content
+
+Existing Jekyll posts were not migrated. The site starts fresh — add new content to `src/data/readings.ts` or create Markdown files under `src/content/`.
