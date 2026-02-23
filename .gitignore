@@ -6,6 +6,16 @@ dist/
 .env
 .env.*
 
+# Legacy Jekyll
+_site
+.sass-cache
+.jekyll-metadata
+.bundle
+.jekyll-cache
+/vendor
+*.lock
+assets/images/archive
+
 # OS
 .DS_Store
 Thumbs.db
